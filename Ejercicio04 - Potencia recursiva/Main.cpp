@@ -1,5 +1,5 @@
 /*
-    4. Escriba una función recursiva que calcule un número elevado a una 
+    4. Escriba una funciÃ³n recursiva que calcule un nÃºmero elevado a una 
        potencia entera mayor o igual que cero : x ^ y.
 */
 
@@ -30,7 +30,7 @@ void pedirDatos(int& x, int& y)
     std::cout << "Ingrese la base: "; std::cin >> x;
     do
     {
-		std::cout << "Ingrese el exponente: "; std::cin >> y;
+	std::cout << "Ingrese el exponente: "; std::cin >> y;
         if (y < 0)
         {
             std::cout << "Error: el exponente no puede ser negativo.\n";
