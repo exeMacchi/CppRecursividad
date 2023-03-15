@@ -1,10 +1,10 @@
-// 3. Realice una función recursiva para la serie Fibonacci.
+// 3. Realice una funciÃ³n recursiva para la serie Fibonacci.
 
 #include <iostream>
 #include <locale>
 
 // Prototipos
-int pedirNumeroLimite();
+int  pedirNumeroLimite();
 void fibonacci(int n1, int n2, int hastaX);
 
 // Main
@@ -25,11 +25,11 @@ int pedirNumeroLimite()
     int hastaX{};
     do
     {
-		std::cout << "Cantidad de números de la serie Fibonacci:  "; 
+	std::cout << "Cantidad de nÃºmeros de la serie Fibonacci:  "; 
         std::cin >> hastaX;
         if (hastaX < 0)
         {
-            std::cout << "Error: el número no puede ser negativo.\n";
+            std::cout << "Error: el nÃºmero no puede ser negativo.\n";
         }
 
     } while (hastaX < 0);
