@@ -1,4 +1,4 @@
-// 2. Realice una función recursiva que sume los primeros n enteros positivos.
+// 2. Realice una funciÃ³n recursiva que sume los primeros n enteros positivos.
 
 #include <iostream>
 #include <locale>
@@ -26,10 +26,10 @@ void pedirNumero(int& numero)
 {
     do
     {
-		std::cout << "Ingrese un número positivo: "; std::cin >> numero;
+	std::cout << "Ingrese un nÃºmero positivo: "; std::cin >> numero;
         if (numero < 0)
         {
-            std::cout << "Error: el número no puede ser negativo.\n";
+            std::cout << "Error: el nÃºmero no puede ser negativo.\n";
         }
     } while (numero < 0);
     std::cout << "\n";
