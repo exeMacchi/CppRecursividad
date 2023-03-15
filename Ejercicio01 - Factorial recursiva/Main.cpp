@@ -1,4 +1,4 @@
-// 1. Realizar una función factorial recursiva.
+// 1. Realizar una funciÃ³n factorial recursiva.
 
 #include <iostream>
 #include <locale>
@@ -41,10 +41,10 @@ void pedirNumero(int& numero)
 {
     do
     {
-		std::cout << "Ingrese un número: "; std::cin >> numero;
+	std::cout << "Ingrese un nÃºmero: "; std::cin >> numero;
         if (numero < 0)
         {
-            std::cout << "Error: el número factorial no puede ser negativo.\n";
+            std::cout << "Error: el nÃºmero factorial no puede ser negativo.\n";
         }
 
     } while (numero < 0);
