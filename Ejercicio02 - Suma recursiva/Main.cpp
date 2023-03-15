@@ -1,19 +1,14 @@
 // 2. Realice una función recursiva que sume los primeros n enteros positivos.
 
 #include <iostream>
-#include <locale.h>
+#include <locale>
 
-using std::cout;
-using std::cin;
-using std::endl;
-
-//PROTOTIPOS
+// Prototipos
 void pedirNumero(int& numero);
-int suma(int numero);
+int  suma(int numero);
 void mostrarResultado(int resultado);
 
-
-//MAIN
+// Main
 int main()
 {
     setlocale(LC_ALL, "es_ES");
@@ -23,21 +18,21 @@ int main()
     resultado = suma(numero);
     mostrarResultado(resultado);
 
-
     return 0;
 }
 
-//FUNCIONES
-
+// Declaraciones
 void pedirNumero(int& numero)
 {
-    cout << "Ingrese un número positivo: "; cin >> numero;
-    while (numero < 0)
+    do
     {
-        cout << "Error: por favor, ingrese un número positivo: ";
-        cin >> numero;
-    }
-    cout << endl;
+		std::cout << "Ingrese un número positivo: "; std::cin >> numero;
+        if (numero < 0)
+        {
+            std::cout << "Error: el número no puede ser negativo.\n";
+        }
+    } while (numero < 0);
+    std::cout << "\n";
 }
 
 int suma(int numero)
@@ -55,5 +50,5 @@ int suma(int numero)
 
 void mostrarResultado(int resultado)
 {
-    cout << "La suma total: " << resultado << endl;
+    std::cout << "La suma total: " << resultado << "\n";
 }

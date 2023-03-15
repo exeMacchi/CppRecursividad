@@ -1,19 +1,15 @@
 // 1. Realizar una función factorial recursiva.
 
 #include <iostream>
-#include <locale.h>
+#include <locale>
 
-using std::cout;
-using std::cin;
-using std::endl;
-
-//PROTOTIPOS
-int factorial(int numero);
+// Prototipos
+int  factorial(int numero);
 void pedirNumero(int& numero);
 void mostrarResultado(int resultado);
 
 
-//MAIN
+// Main
 int main()
 {
     setlocale(LC_ALL, "es_ES");
@@ -26,7 +22,7 @@ int main()
     return 0;
 }
 
-//FUNCIONES
+// Declaraciones
 
 int factorial(int numero)
 {
@@ -43,11 +39,19 @@ int factorial(int numero)
 
 void pedirNumero(int& numero)
 {
-    cout << "Ingrese un número: "; cin >> numero;
-    cout << endl;
+    do
+    {
+		std::cout << "Ingrese un número: "; std::cin >> numero;
+        if (numero < 0)
+        {
+            std::cout << "Error: el número factorial no puede ser negativo.\n";
+        }
+
+    } while (numero < 0);
+    std::cout << "\n";
 }
 
 void mostrarResultado(int resultado)
 {
-    cout << "El factorial es: " << resultado << endl;
+    std::cout << "El factorial es: " << resultado << "\n";
 }
